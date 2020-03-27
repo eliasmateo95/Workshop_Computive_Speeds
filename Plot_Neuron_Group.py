@@ -1,4 +1,4 @@
-from Neuron import *
+from Neuron_Group import *
 
 plt.figure(figsize=(14, 10), dpi= 80, facecolor='w', edgecolor='k')
 plt.subplot(3, 1, 1)
