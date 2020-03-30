@@ -1,4 +1,4 @@
-from Startup_Part2 import *
+from Startup_Multiple_Cells import *
 
 def rand_params(Parameter,Unit,N_Cells,Step):
     Nn = [int(N_Cells/2), N_Cells-int(N_Cells/2)] 
@@ -266,4 +266,4 @@ for ii in range(0, N_Cells_IO, 1):
 
 
 
-store('IO_group')
+store('IO_group_Multiple_Cells')
