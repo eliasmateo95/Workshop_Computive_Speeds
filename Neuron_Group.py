@@ -1,4 +1,4 @@
-from brian2 import *
+from Startup_Part2 import *
 
 def rand_params(Parameter,Unit,N_Cells,Step):
     Nn = [int(N_Cells/2), N_Cells-int(N_Cells/2)] 
@@ -10,14 +10,6 @@ def rand_params(Parameter,Unit,N_Cells,Step):
     Param_vector = [x / float(Base) for x in range(Begin, End, 1)]*Unit
     shuffle(Param_vector)
     return Param_vector
-
-
-
-dt = 0.025*ms
-dt_rec = 0.25*ms
-
-N_Cells_IO = 3
-
 
 eqs_IO_V = '''
 dVs/dt = (-(I_ds + I_ls + I_Na + I_Ca_l + I_K_dr + I_h + I_as) + Iapp_s)/Cm : volt
